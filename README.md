@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/e91e11cd-7f29-446b-a04b-328dc938766e)
+
 # Leitor de RSS do G1
 
 Este projeto é um leitor de RSS que consome feeds do G1 e os disponibiliza em uma API construída com Node.js e Docker.
@@ -10,32 +12,29 @@ Este projeto é um leitor de RSS que consome feeds do G1 e os disponibiliza em u
 - **RSS Parser**: Biblioteca utilizada para parsear os feeds RSS.
 
 ## Estrutura do Projeto
-
 ```
 api-rss/
-├── node_modules/
-├── public/
-│   ├── js/
-│   │   └── rss-utils.js
-│   ├── styles/
-│   │   └── styles.css
-│   └── index.html
-├── src/
-│   ├── config/
-│   │   └── constants.js
-│   ├── controllers/
-│   │   └── rss.controller.js
-│   ├── routes/
-│   │   └── rss.routes.js
-│   └── services/
-│       └── rss.service.js
-├── .dockerignore
-├── Dockerfile
-├── index.js
-├── package-lock.json
-└── package.json
+├── public/                  # Arquivos estáticos acessíveis publicamente
+│   ├── js/                  # Scripts JavaScript do front-end
+│   │   └── rss-utils.js     # Utilitários JavaScript para manipulação de RSS
+│   ├── styles/              # Arquivos de estilo CSS
+│   │   └── styles.css       # Estilos CSS para a interface do usuário
+│   └── index.html           # Página HTML principal do front-end
+├── src/                     # Código-fonte da aplicação
+│   ├── config/              # Configurações globais da aplicação
+│   │   └── constants.js     # Constantes utilizadas no projeto (ex: URLs, chaves, etc.)
+│   ├── controllers/         # Controladores que lidam com a lógica das rotas
+│   │   └── rss.controller.js # Controlador para manipulação de feeds RSS
+│   ├── routes/              # Definição das rotas da API
+│   │   └── rss.routes.js    # Rotas relacionadas ao RSS
+│   └── services/            # Serviços que contêm a lógica de negócio
+│       └── rss.service.js   # Serviço para buscar e processar feeds RSS
+├── .dockerignore            # Arquivo que especifica quais arquivos ignorar ao construir a imagem Docker
+├── Dockerfile               # Instruções para construir a imagem Docker
+├── index.js                 # Ponto de entrada da aplicação (inicializa o servidor)
+├── package-lock.json        # Arquivo gerado automaticamente com versões exatas das dependências
+└── package.json             # Metadados do projeto e lista de dependências
 ```
-
 ## Passos para Execução
 
 ### Pré-requisitos
