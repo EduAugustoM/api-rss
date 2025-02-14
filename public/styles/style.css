@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  background: white;
+}
+
+.header {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.header span {
+  font-weight: 900;
+  font-size: 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.btn {
+  font-size: 16px;
+  padding: 8px 20px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+  width: fit-content;
+}
+
+#output {
+  margin: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  max-height: 60vh;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.btn-secondary {
+  background-color: #6c757d !important;
+  margin-left: 10px;
+}
+
+.search-group {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+input[type='number'] {
+  max-width: 120px;
+}
+
+.noticia-item {
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+
+.meta {
+  color: #6c757d;
+  font-size: 0.9em;
+  margin: 5px 0;
+}
+
+.descricao {
+  color: #303030;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.leia-mais {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.leia-mais:hover {
+  text-decoration: underline;
+}
+
+.sem-resultados {
+  color: #dc3545;
+  text-align: center;
+  padding: 20px;
+}
+
+.erro {
+  color: #dc3545;
+  background-color: #f8d7da;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.feed-header {
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  text-align: center;
+  border-bottom: 2px solid #eee;
+}
+
+.feed-header h2 {
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.feed-description {
+  color: #666;
+  font-size: 1.1em;
+  max-width: 600px;
+  margin: 0 auto;
+}

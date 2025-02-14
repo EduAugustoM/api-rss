@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta RSS</title>
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <span>RSS do G1</span>
+      <button class="btn" onclick="atualizarRSS()">Ler Notícias</button>
+
+      <span>Consulta Personalizada</span>
+      <div class="search-group">
+        <input type="text" id="termo" placeholder="Digite o termo (ex: Brasil)">
+        <input type="number" id="limite" placeholder="Limite" min="1" max="20" value="5">
+        <button class="btn" onclick="buscarNoticias()">Buscar</button>
+      </div>
+    </div>
+
+    <pre id="output"></pre>
+  </div>
+  <script src="/js/rss-utils.js"></script>
+</body>
+</html>
